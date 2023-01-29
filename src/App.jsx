@@ -25,7 +25,7 @@ function App() {
       <main className='main'>
       <Lights />
       <div className="container mx-auto px-4">
-      <div className="container" ref={container} style = {{width : "40%", height :"40%", color: "black" }}></div>
+      <div className="container ml-10" ref={container} style = {{width : "40%", height :"40%", color: "black"}}></div>
       <Scontent/>
       </div>
       </main>
