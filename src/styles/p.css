@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header{
+    font-size:50px;
+    color:rgb(255, 123, 0);
+    text-align: center;
+}
