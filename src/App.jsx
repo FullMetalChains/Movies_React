@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
-import anime from './load.json';
+import anime from './components/lottie-files/load.json';
 import {Navbar,Lights, Scontent} from './components'
 
 
