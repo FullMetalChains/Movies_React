@@ -1,23 +1,8 @@
-import React, { useEffect, useRef } from 'react';
-import lottie from 'lottie-web';
-import anime from './components/lottie-files/load.json';
-import {Navbar,Lights, Scontent} from './components'
+import React, {ReactDOM} from 'react';
+import {Navbar,Lights, Scontent, Cards, Loading} from './components'
 
 
 function App() {
-
-  const container = useRef(null)
-
-  useEffect(() => {
-    const instance = lottie.loadAnimation({
-      container: container.current,
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      animationData: anime
-    });
-    return () => instance.destroy();
-  }, [])
 
   return (
     <>
@@ -25,7 +10,7 @@ function App() {
       <main className='main'>
       <Lights />
       <div className="container mx-auto px-4">
-      <div className="container ml-10" ref={container} style = {{width : "40%", height :"40%", color: "black"}}></div>
+      <Loading/>
       <Scontent/>
       </div>
       </main>

@@ -50,7 +50,7 @@ const Navbar = () => {
                     <a href="#" className='nav-link'>
                         <FaMoon/>
                         <span className="link-text">
-                            Mode
+                            Change Theme
                         </span>
                     </a>
                 </li>
