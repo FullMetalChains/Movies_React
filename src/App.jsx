@@ -1,20 +1,12 @@
-import React, {ReactDOM} from 'react';
-import {Navbar,Lights, Scontent, Cards, Loading} from './components'
-
+import React from 'react';
+import { Home } from './pages';
+import {Route,Routes} from "react-router-dom";
 
 function App() {
-
   return (
-    <>
-      <Navbar/>
-      <main className='main'>
-      <Lights />
-      <div className="container mx-auto px-4">
-      <Loading/>
-      <Scontent/>
-      </div>
-      </main>
-    </>
+    <Routes>
+        <Route path ="/" element={<Home/>}/>
+    </Routes>
   );
 }
 
