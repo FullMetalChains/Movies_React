@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFilm,FaTrophy,FaHistory,FaCog, FaMoon, FaSearch } from 'react-icons/fa';
+import {Link} from "react-router-dom"
 
 
 const Navbar = () => {
@@ -7,52 +8,52 @@ const Navbar = () => {
         <nav className='navbar'>
             <ul className='navbar-nav'>
                 <li className='logo'>
-                    <a href="#" className='nav-link'>
+                    <Link to="/" className='nav-link'>
                         <FaFilm/>
                         <span className="link-text">
                             Movies
                         </span>
-                    </a>
+                    </Link>
                 </li>
                 <li className='nav-item'>
-                    <a href="#" className='nav-link'>
+                    <Link to="#" className='nav-link'>
                         <FaSearch/>
                         <span className="link-text">
                             Search
                         </span>
-                    </a>
+                    </Link>
                 </li>
                 <li className='nav-item'>
-                    <a href="#" className='nav-link'>
+                    <Link to="Achievements" className='nav-link'>
                         <FaTrophy/>
                         <span className="link-text">
                             Trophies
                         </span>
-                    </a>
+                    </Link>
                 </li>
                 <li className='nav-item'>
-                    <a href="#" className='nav-link'>
+                    <Link to="/History" className='nav-link'>
                         <FaHistory/>
                         <span className="link-text">
                             History
                         </span>
-                    </a>
+                    </Link>
                 </li>
                 <li className='nav-item'>
-                    <a href="#" className='nav-link'>
+                    <Link to="/Settings" className='nav-link'>
                         <FaCog/>
                         <span className="link-text">
-                            Setting
+                            Settings
                         </span>
-                    </a>
+                    </Link>
                 </li>
                 <li className='nav-item'>
-                    <a href="#" className='nav-link'>
+                    <Link to="#" className='nav-link'>
                         <FaMoon/>
                         <span className="link-text">
                             Change Theme
                         </span>
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </nav>

@@ -6,9 +6,7 @@ function Home() {
 
   return (
     <>
-      <Navbar/>
       <main className='main'>
-      <Lights />
       <div className="container mx-auto px-4">
       <Loading/>
       <Scontent/>
