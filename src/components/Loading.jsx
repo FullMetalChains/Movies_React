@@ -20,7 +20,7 @@ function Loading() {
 
   return (
     <>
-      <div className="container ml-10" ref={container} style = {{width : "40%", height :"40%", color: "black"}}></div>
+      <div className="container ml-10" ref={container} style = {{width : "10%", height :"10%"}}></div>
     </>
   );
 }

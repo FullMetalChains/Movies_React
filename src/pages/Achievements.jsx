@@ -6,7 +6,7 @@ function Achievements() {
     const {id} = useParams();
   return (
     <>
-        <div style={{"text-align":"center"}}>
+        <div style={{textAlign:"center"}}>
             Hello, {id?(id):("Noname")}
         </div>
     </>

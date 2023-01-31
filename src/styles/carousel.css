@@ -1,0 +1,71 @@
+:root{
+    color:white;
+    font-family: 'Source Code Pro', monospace;
+    --bg-primary: rgb(20, 1, 24);
+    --bg-secondary: rgb(5, 1, 10);
+    --text-primary:white;
+    --carousel-color: rgb(199, 14, 85);
+  }
+
+
+
+.carousel{
+    overflow: hidden;
+    max-width:1500px;
+    max-height: calc(100vw - 100px);
+    height:33rem;
+    position:relative;
+    margin-bottom: 5rem;     
+  }
+  
+  .carousel .carouselItem,
+  .carousel .carouselItemHidden{
+    display:none;
+  }
+  
+  .carousel .carouselItem img{
+    width:100%;
+    max-width:1500px;
+    max-height: calc(100vw - 100px);
+    height:33rem;
+  }
+  
+  .carousel .carouselItemVisible{
+    display:block;
+    animation: fadeVisibility 0.5s
+  }
+  
+  .carousel .carouselActions{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+  }
+  
+  .carousel .carouselActions button{
+      border-radius: 100px;
+      border:0;
+      font-weight: bold;
+      background-color: var(--carousel-color);
+      width:40px;
+      height:40px;
+  }
+  
+  .carousel .carouselActions button#carouselprev{
+    margin-left: 1%;
+  }
+  .carousel .carouselActions button#carouselnext{
+    margin-right: 1%;
+  }
+
+  @keyframes fadeVisibility {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: opacity linear;
+    }
+  }
