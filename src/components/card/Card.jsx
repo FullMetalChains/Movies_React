@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 const Card = ({movie}) => {
 
     const [isLoading, setisLoading] = useState(true)
-
+ 
     useEffect(()=>{
         setTimeout(()=>{
             setisLoading(false)
@@ -30,22 +30,22 @@ const Card = ({movie}) => {
                 </SkeletonTheme>
             </div>
             :
-            <Link to = {`movie/${movie.id}`} style = {{textDecoration:"none", color:"white"}}>
+            <Link to = {`/movie/${movie.id}`} style = {{textDecoration:"none", color:"white"}}>
                 <div className="cards">
-                    <img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} className="card__image" />
+                    <img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} className="cards__img" />
                     <div className="cards__overlay"> 
-                        <div className="cards__title">
+                        <div className="card__title">
                             {movie.original_title}
                         </div>
-                        <div className="cards__runtime">
+                        <div className="card__runtime">
                             {movie.release_date}
                             <span className="card__rating">
                                 {movie.vote_average}
                                 <i className='fas fa-star' />{" "}
                             </span>
                         </div>
-                        <div className="cards__description">
-                            {movie.overview.slice(0,100) + "..."}
+                        <div className="card__description">
+                            {movie.overview.slice(0,120) + "..."}
                         </div>
                     </div>
                 </div>
