@@ -19,6 +19,7 @@ function App() {
               <Route index element = {<Home/>}></Route>
               <Route path = "/movie/:id" element = { <Movie/> }></Route>
               <Route path = "movies/:type" element = {<MovieList/>}></Route>
+              <Route path = "query/:query" element = "dfsfdsfdf"></Route>
               <Route path = "/*" element = {<h1>This route doesn&apos;t exist</h1>}></Route>
             </Routes>
           </Router>

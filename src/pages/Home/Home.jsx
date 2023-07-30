@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import MovieList from '../../components/movieList/MovieList';
+// import SearchBar from '../../components/searchBar/SearchBar';
 
 const Home = () => {
 
@@ -13,6 +14,11 @@ const Home = () => {
         fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${import.meta.env.VITE_TMDB}`)
         .then(res => res.json())
         .then(data => setPopularMovies(data.results))
+
+        // fetch(`https://api.themoviedb.org/3/search/movie?api_key=${import.meta.env.VITE_TMDB}&query=the+avengers`)
+        // .then(res => res.json())
+        // .then(data => console.log(data.results))
+        
     },[])
 
 

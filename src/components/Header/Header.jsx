@@ -1,6 +1,7 @@
 // import React from 'react'
 import "./Header.css"
 import { Link } from 'react-router-dom'
+import SearchBar from "../searchBar/SearchBar"
 
 
 function Header() {
@@ -11,6 +12,9 @@ function Header() {
                 <Link to = "/movies/popular" style = {{textDecoration:"none"}}><span>Popular</span></Link>
                 <Link to = "/movies/top_rated" style = {{textDecoration:"none"}}><span>Top_Rated</span></Link>
                 <Link to = "/movies/upcoming" style = {{textDecoration:"none"}}><span>Upcoming</span></Link>
+            </div>
+            <div className="headerRight">
+                <SearchBar/>
             </div>
         </div>
     )
