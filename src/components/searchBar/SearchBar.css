@@ -1,5 +1,5 @@
 .search-container{
-    background: #ddd;
+    background: #fff;
     height: 30px;
     border-radius: 30px;
     padding: 10px 20px;
@@ -36,8 +36,9 @@
 
 }
 
-.search-container .search-btn .fas{
-    color: #5cbdbb;
+
+.icon-color{
+    color: #fd1414;
 }
 
 @keyframes hoverShake {

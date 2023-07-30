@@ -7,6 +7,7 @@ import Header from "./components/Header/Header"
 import Home from "./pages/Home/Home"
 import MovieList from './components/movieList/MovieList'
 import Movie from './pages/MovieDetail/Movie'
+import QueryList from './components/queryList/QueryList'
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
               <Route index element = {<Home/>}></Route>
               <Route path = "/movie/:id" element = { <Movie/> }></Route>
               <Route path = "movies/:type" element = {<MovieList/>}></Route>
-              <Route path = "query/:query" element = "dfsfdsfdf"></Route>
+              <Route path = "query/:queryid" element = {<QueryList/>}></Route>
               <Route path = "/*" element = {<h1>This route doesn&apos;t exist</h1>}></Route>
             </Routes>
           </Router>

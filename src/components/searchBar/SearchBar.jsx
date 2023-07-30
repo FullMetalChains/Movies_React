@@ -9,10 +9,9 @@ const SearchBar = () => {
 
   return (
     <div className="search-container">
-        <input type="text" name="search" placeholder="Search..." className="search-input" onChange={q=> {setmovieQuery(q.target.value)
-        console.log(movieQuery)}}/>
+        <input type="text" name="search" placeholder="Search..." className="search-input" onChange={q=> setmovieQuery(q.target.value)}/>
         <Link to = {`/query/${movieQuery}`} style = {{textDecoration:"none"}}>
-            <i className="fas fa-search"></i>      
+            <i className="fas fa-search icon-color"></i>      
         </Link>
     </div>
   )
